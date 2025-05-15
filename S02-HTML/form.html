@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" action="product.html">
+      <div>
+        <label>code</label>
+        <input type="text" name="code" value="2056156123" readonly disabled />
+      </div>
+      <div>
+        <label>firstname:</label>
+        <input type="text" name="firstname" autofocus />
+      </div>
+      <div>
+        <label>lastname:</label>
+        <input type="text" name="lastname" />
+      </div>
+      <div>
+        <label>website:</label>
+        <input type="url" name="website" required />
+      </div>
+      <div>
+        <label>score:</label>
+        <input type="number" name="score" max="100" min="0" step="5" />
+      </div>
+      <div>
+        <label>color:</label>
+        <input type="color" name="color" />
+      </div>
+      <div>
+        <label>date:</label>
+        <input type="date" name="birthday" />
+      </div>
+      <div>
+        <label>rate:</label>
+        <input type="range" name="user_rate" min="100" max="105" value="104" />
+      </div>
+      <div>
+        <label>resume:</label>
+        <input type="file" name="resume" />
+      </div>
+      <div>
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>

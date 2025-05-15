@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div class="question1">
+        <span> 1- Select your answer?</span>
+        <div>
+          <div>
+            <input type="radio" name="question1" value="gozine1" />
+            <label>Option 1</label>
+          </div>
+          <div>
+            <input type="radio" name="question1" value="gozine2" />
+            <label>Option 2</label>
+          </div>
+          <div>
+            <input type="radio" name="question1" value="gozine3" checked />
+            <label>Option 3</label>
+          </div>
+          <div>
+            <input type="radio" name="question1" value="gozine4" />
+            <label>Option 4</label>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="question2">
+        <span> 2- Select your answer?</span>
+        <div>
+          <div>
+            <input type="radio" name="question2" value="gozine1" />
+            <label>Option 1</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="gozine2" />
+            <label>Option 2</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="gozine3" />
+            <label>Option 3</label>
+          </div>
+          <div>
+            <input type="radio" name="question2" value="gozine4" />
+            <label>Option 4</label>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="question3">
+        <div>Select your interests?</div>
+        <div>
+          <label>
+            <input type="checkbox" name="interests[]" value="movie" />
+            movie
+          </label>
+          <label>
+            <input type="checkbox" name="interests[]" value="music" checked />
+            music
+          </label>
+          <label>
+            <input type="checkbox" name="interests[]" value="sport" />
+            sport
+          </label>
+        </div>
+      </div>
+      <br />
+      <div class="question4">
+        <textarea name="description" placeholder="Your Comment here..." rows="5" cols="20"></textarea>
+      </div>
+      <br />
+      <div class="question5">
+        <select name="province">
+          <option value="0">Select Your Province...</option>
+          <option value="30">Tehran</option>
+          <option value="29">Alborz</option>
+          <option value="28">Gilan</option>
+          <option value="27" selected>Mazandaran</option>
+          <option value="31">Isfahan</option>
+        </select>
+      </div>
+      <br />
+      <div class="submit-box">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+  </body>
+</html>
