@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.styled-table {
+  /* border: 1px solid #999; */
+  border-collapse: collapse;
+  margin: 64px auto;
+  border-spacing: 0;
+  font-family: Roboto;
+}
+
+.styled-table td,
+.styled-table th {
+  border: 1px solid #999;
+  padding: 4px;
+  text-align: center;
+}
+
+.styled-table tr:hover {
+  background-color: #eeeeee;
+}
+/* .styled-table tbody tr:last-child {
+  background-color: red !important;
+}
+.styled-table tbody tr:first-child {
+  background-color: green !important;
+} */
+.styled-table tbody tr:nth-child(odd) {
+  background-color: #ccc;
+}

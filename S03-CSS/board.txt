@@ -1,0 +1,23 @@
+ways to write css👇🏻
+1- internal
+2- inline (highest priority)
+3- external
+
+
+hexa decimal format logic👇
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10 → a
+11 → b
+.
+.
+.
+15 → f
