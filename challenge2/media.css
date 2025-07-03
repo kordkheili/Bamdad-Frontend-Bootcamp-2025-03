@@ -1,0 +1,19 @@
+/*! 768px to ... */
+@media all and (min-width: 768px) {
+  .product-card {
+    display: flex;
+    max-width: 720px;
+  }
+  .product-card-image img {
+    height: 100%;
+  }
+  .product-card-footer {
+    padding-top: 32px;
+  }
+  .product-title {
+    font-size: 24px;
+  }
+  .badge {
+    left: 16px;
+  }
+}
