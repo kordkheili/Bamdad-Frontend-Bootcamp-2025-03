@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Selectors Practice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JavaScript Selectors Playground</h1>
+
+      <!-- Basic boxes with IDs -->
+      <section>
+        <h2>Boxes with IDs</h2>
+        <div class="grid">
+          <div id="first-box" class="box red">ID: first-box</div>
+          <div id="second-box" class="box blue">ID: second-box</div>
+          <div id="third-box" class="box green">ID: third-box</div>
+          <div id="special-box" class="box purple special">ID: special-box</div>
+        </div>
+      </section>
+
+      <!-- Boxes with classes -->
+      <section>
+        <h2>Boxes with Classes</h2>
+        <div class="grid">
+          <div class="box orange primary">Class: primary</div>
+          <div class="box dark secondary">Class: secondary</div>
+          <div class="box red primary featured">Classes: primary featured</div>
+          <div class="box blue secondary important">Classes: secondary important</div>
+        </div>
+      </section>
+
+      <!-- Navigation section -->
+      <section class="nav-section">
+        <h2>Navigation Elements</h2>
+        <nav>
+          <a href="#" class="nav-item" data-page="home">Home</a>
+          <a href="#" class="nav-item" data-page="about">About</a>
+          <a href="#" class="nav-item" data-page="services">Services</a>
+          <a href="#" class="nav-item" data-page="contact">Contact</a>
+        </nav>
+      </section>
+
+      <!-- Form section -->
+      <section class="form-section">
+        <h2>Form Elements</h2>
+        <form id="sample-form">
+          <div class="form-group">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter username" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter email" />
+          </div>
+          <div class="form-group">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+              <option value="student">Student</option>
+              <option value="teacher">Teacher</option>
+              <option value="developer">Developer</option>
+            </select>
+          </div>
+        </form>
+      </section>
+
+      <!-- List section -->
+      <section class="list-section">
+        <h2>List Items</h2>
+        <ul id="task-list">
+          <li class="task completed" data-priority="high">Learn getElementById</li>
+          <li class="task pending" data-priority="medium">Master querySelector</li>
+          <li class="task completed" data-priority="low">Practice querySelectorAll</li>
+          <li class="task pending" data-priority="high">Understand CSS selectors</li>
+        </ul>
+      </section>
+
+      <!-- Table section -->
+      <section class="table-section">
+        <h2>Table Data</h2>
+        <table id="students-table">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Subject</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="student-row" data-grade="A">
+              <td>Alice Johnson</td>
+              <td>20</td>
+              <td>JavaScript</td>
+              <td>A</td>
+            </tr>
+            <tr class="student-row" data-grade="B">
+              <td>Bob Smith</td>
+              <td>22</td>
+              <td>HTML/CSS</td>
+              <td>B</td>
+            </tr>
+            <tr class="student-row" data-grade="A">
+              <td>Carol Davis</td>
+              <td>21</td>
+              <td>React</td>
+              <td>A</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Nested elements -->
+      <section>
+        <h2>Nested Elements</h2>
+        <div class="parent-container">
+          <div class="child-box box green">
+            <span class="nested-text">Nested Span</span>
+            <div class="grandchild-box box orange">Grandchild</div>
+          </div>
+          <div class="child-box box purple">
+            <p class="nested-paragraph">Nested Paragraph</p>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
