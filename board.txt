@@ -1,1 +1,8 @@
 alireza@websila.co
+
+s01 → 3 hour
+s02 → 5 hour
+s03 → 5 hour
+s04 → 3 hour
+s05 → 5 hour
+s06 → 5 hour
