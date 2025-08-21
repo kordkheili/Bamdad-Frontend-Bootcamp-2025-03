@@ -1,4 +1,4 @@
-//! get data method 1
+//! get data method 1 (READ)
 // fetch("https://fakestoreapi.com/products")
 //   .then(function (response) {
 //     return response.json();
@@ -7,7 +7,7 @@
 //     console.log(data);
 //   });
 
-//! get data method 2
+//! get data method 2 (READ)
 async function getProducts() {
   const response = await fetch("https://fakestoreapi.com/products");
   const data = await response.json();
