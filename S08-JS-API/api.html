@@ -4,8 +4,47 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body>
+    <!-- Always-visible Minimal Cart (place ABOVE the products list) -->
+    <section class="w-full bg-white border-b">
+      <div class="max-w-7xl mx-auto px-4 py-4">
+        <!-- Header / Summary -->
+        <div class="flex items-center justify-between">
+          <div class="flex items-center gap-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="w-6 h-6 text-gray-700"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              aria-hidden="true"
+            >
+              <path
+                d="M7 18a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 .001 4.001A2 2 0 0 0 17 18ZM6.21 5l-.94-2H2v2h2l3.6 7.59-1.35 2.44A2 2 0 0 0 6 18h13v-2H6l1.17-2h9.91c.75 0 1.41-.42 1.74-1.07l3.09-6.13A1 1 0 0 0 21 5H6.21Z"
+              />
+            </svg>
+            <h3 class="text-sm font-semibold text-gray-800">Your Cart</h3>
+          </div>
+          <div class="flex items-center gap-4">
+            <span class="text-sm text-gray-600">Items: <strong id="cart-count">0</strong></span>
+            <span class="text-sm text-gray-600">Total: <strong id="cart-total">$0.00</strong></span>
+            <button id="cart-clear" class="text-sm text-red-600 hover:underline">Clear cart</button>
+          </div>
+        </div>
+
+        <!-- Items List (populated by JS) -->
+        <div id="cart-items" class="mt-4 space-y-3"></div>
+      </div>
+    </section>
+
+    <!-- Products Container -->
+    <section class="w-full bg-gray-50 py-8">
+      <div class="max-w-7xl mx-auto px-4">
+        <div id="product-list" class="flex flex-wrap -mx-3"></div>
+      </div>
+    </section>
+
     <script src="api.js"></script>
   </body>
 </html>
